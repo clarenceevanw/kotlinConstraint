@@ -257,145 +257,186 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sec_fakultas"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:paddingHorizontal="20dp"
+
             app:layout_constraintTop_toBottomOf="@id/sec_lokasi"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:paddingHorizontal="20dp"
-            android:id="@+id/sec_fakultas">
+            app:layout_constraintEnd_toEndOf="parent">
 
             <TextView
+                android:id="@+id/tv_fakultas_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="FAKULTAS &amp; SEKOLAH UNGGULAN"
                 android:textColor="#334155"
                 android:textSize="12sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
 
-            <LinearLayout
-                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card_fakultas"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_modern_card_rounded"
-                android:orientation="vertical"
                 android:elevation="2dp"
-                android:padding="20dp">
+                android:padding="20dp"
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_fakultas_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_fti"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingBottom="14dp">
+                    android:text="Fakultas Teknologi Industri (FTI)"
+                    android:textColor="#0F172A"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Fakultas Teknologi Industri (FTI)"
-                        android:textColor="#0F172A"
-                        android:textSize="14sp"
-                        android:textStyle="bold"/>
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="Informatika, Teknik Industri, Elektro, Mesin, dll."
-                        android:textColor="#64748B"
-                        android:textSize="12sp"/>
-
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#E2E8F0"
-                    android:layout_marginBottom="14dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/tv_fti_desc"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingBottom="14dp">
+                    android:layout_marginTop="3dp"
+                    android:text="Informatika, Teknik Industri, Elektro, Mesin, dll."
+                    android:textColor="#64748B"
+                    android:textSize="12sp"
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="School of Business and Management"
-                        android:textColor="#0F172A"
-                        android:textSize="14sp"
-                        android:textStyle="bold"/>
+                    app:layout_constraintTop_toBottomOf="@id/tv_fti"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="Manajemen Bisnis Internasional, Akuntansi, Hotel Management."
-                        android:textColor="#64748B"
-                        android:textSize="12sp"/>
 
-                </LinearLayout>
                 <View
-                    android:layout_width="match_parent"
+                    android:id="@+id/divider_fakultas_1"
+                    android:layout_width="0dp"
                     android:layout_height="1dp"
+                    android:layout_marginTop="14dp"
                     android:background="#E2E8F0"
-                    android:layout_marginBottom="14dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
+
+                    app:layout_constraintTop_toBottomOf="@id/tv_fti_desc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_business"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingBottom="14dp">
+                    android:layout_marginTop="14dp"
+                    android:text="School of Business and Management"
+                    android:textColor="#0F172A"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Fakultas Humaniora dan Industri Kreatif"
-                        android:textColor="#0F172A"
-                        android:textSize="14sp"
-                        android:textStyle="bold"/>
+                    app:layout_constraintTop_toBottomOf="@id/divider_fakultas_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="Desain Interior, DKV, Sastra, dan Creative Media."
-                        android:textColor="#64748B"
-                        android:textSize="12sp"/>
-
-                </LinearLayout>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="#E2E8F0"
-                    android:layout_marginBottom="14dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/tv_business_desc"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingBottom="14dp">
+                    android:layout_marginTop="3dp"
+                    android:text="Manajemen Bisnis Internasional, Akuntansi, Hotel Management."
+                    android:textColor="#64748B"
+                    android:textSize="12sp"
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Fakultas Teknik Sipil dan Perencanaan"
-                        android:textColor="#0F172A"
-                        android:textSize="14sp"
-                        android:textStyle="bold"/>
+                    app:layout_constraintTop_toBottomOf="@id/tv_business"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="Teknik Sipil dan Arsitektur."
-                        android:textColor="#64748B"
-                        android:textSize="12sp"/>
-
-                </LinearLayout>
                 <View
-                    android:layout_width="match_parent"
+                    android:id="@+id/divider_fakultas_2"
+                    android:layout_width="0dp"
                     android:layout_height="1dp"
+                    android:layout_marginTop="14dp"
                     android:background="#E2E8F0"
-                    android:layout_marginBottom="14dp"/>
-            </LinearLayout>
+
+                    app:layout_constraintTop_toBottomOf="@id/tv_business_desc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_humaniora"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Fakultas Humaniora dan Industri Kreatif"
+                    android:textColor="#0F172A"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+
+                    app:layout_constraintTop_toBottomOf="@id/divider_fakultas_2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_humaniora_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Desain Interior, DKV, Sastra, dan Creative Media."
+                    android:textColor="#64748B"
+                    android:textSize="12sp"
+
+                    app:layout_constraintTop_toBottomOf="@id/tv_humaniora"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <View
+                    android:id="@+id/divider_fakultas_3"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="14dp"
+                    android:background="#E2E8F0"
+
+                    app:layout_constraintTop_toBottomOf="@id/tv_humaniora_desc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_sipil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Fakultas Teknik Sipil dan Perencanaan"
+                    android:textColor="#0F172A"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+
+                    app:layout_constraintTop_toBottomOf="@id/divider_fakultas_3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_sipil_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Teknik Sipil dan Arsitektur."
+                    android:textColor="#64748B"
+                    android:textSize="12sp"
+
+                    app:layout_constraintTop_toBottomOf="@id/tv_sipil"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
