@@ -10,17 +10,18 @@
     android:padding="24dp"
     tools:context=".MainActivity">
     
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/utama"
-        android:orientation="vertical">
+        android:id="@+id/utama">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="#0F172A"
-            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:paddingHorizontal="24dp"
             android:paddingTop="40dp"
             android:paddingBottom="56dp"
@@ -81,13 +82,16 @@
                     android:textColor="#CBD5E1"
                     android:textSize="13sp" />
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="-28dp"
             android:orientation="horizontal"
             android:paddingHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/sec_statistik">
             
             <LinearLayout
@@ -161,12 +165,14 @@
                     android:textColor="#475569"
                     android:textSize="11sp"/>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/sec_statistik"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:paddingHorizontal="20dp"
             android:id="@+id/sec_lokasi">
             <TextView
@@ -216,12 +222,14 @@
                         android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/sec_lokasi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:paddingHorizontal="20dp"
             android:id="@+id/sec_fakultas">
 
@@ -355,12 +363,14 @@
                     android:background="#E2E8F0"
                     android:layout_marginBottom="14dp"/>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/sec_fakultas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:paddingHorizontal="20dp"
             android:id="@+id/sec_fasilitas">
 
@@ -445,12 +455,14 @@
                     android:background="#E2E8F0"
                     android:layout_marginVertical="12dp"/>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/sec_fasilitas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="24dp"
-            android:orientation="vertical"
             android:paddingHorizontal="20dp"
             android:id="@+id/sec_sdg">
             <TextView
@@ -630,9 +642,9 @@
             </LinearLayout>
 
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
