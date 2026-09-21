@@ -87,8 +87,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/sec_statistik">
-            
-            <LinearLayout
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
@@ -96,7 +102,9 @@
                 android:background="@drawable/bg_modern_card_rounded"
                 android:elevation="4dp"
                 android:padding="18dp"
-                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideline50"
                 android:id="@+id/sec_statistik_kiri">
                 
                 <TextView
@@ -105,7 +113,10 @@
                     android:text="DIDIRIKAN"
                     android:textColor="#64748B"
                     android:textSize="10sp"
-                    android:textStyle="bold"/>
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_didirikan"/>
                 
                 <TextView
                     android:layout_width="wrap_content"
@@ -114,7 +125,10 @@
                     android:text="2 Sept 1961"
                     android:textColor="#0F172A"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/tv_didirikan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/tv_tanggal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -122,16 +136,20 @@
                     android:layout_marginTop="4dp"
                     android:text="Yayasan PPPK Petra"
                     android:textColor="#475569"
-                    android:textSize="11sp"/>
-            </LinearLayout>
-            <LinearLayout
+                    android:textSize="11sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_tanggal"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/bg_modern_card_rounded"
                 android:elevation="4dp"
-                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline50"
+                app:layout_constraintEnd_toEndOf="parent"
                 android:padding="18dp"
                 android:id="@+id/sec_statistik_kanan">
                 <TextView
@@ -140,7 +158,10 @@
                     android:text="MAHASISWA"
                     android:textColor="#64748B"
                     android:textSize="10sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/tv_mahasiswa"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -149,7 +170,10 @@
                     android:text="7.000+"
                     android:textColor="#0F172A"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/tv_mahasiswa"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/tv_jumlah"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -157,8 +181,10 @@
                     android:layout_marginTop="4dp"
                     android:text="Aktif &amp; Dinamis"
                     android:textColor="#475569"
-                    android:textSize="11sp"/>
-            </LinearLayout>
+                    android:textSize="11sp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_jumlah"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
